@@ -57,6 +57,9 @@
     .custom-input{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;font-size:1rem;text-align:center}
     @media (max-width:420px){.coins-grid{grid-template-columns:1fr 1fr}.payment-methods{grid-template-columns:repeat(3,1fr)}}
   </style>
+
+
+
 <style>
   header {
     display: flex;
@@ -65,6 +68,18 @@
     padding: 10px 16px;
     border-bottom: 1px solid #ddd;
   }
+/* Giúp phần nội dung không bị chèn lên thanh trạng thái iPhone */
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  background-color: #fff; /* hoặc màu nền app của bạn */
+}
+
+/* Đảm bảo phần header có thêm khoảng cách an toàn */
+header {
+  padding-top: calc(10px + env(safe-area-inset-top));
+}
 
   .header-left {
     display: flex;
@@ -407,3 +422,4 @@ document.addEventListener('keydown', (e)=>{
 </script>
 </body>
 </html>
+
