@@ -94,7 +94,7 @@ header h1{font-size:1.3rem;font-weight:700}
 <div class="method" data-method="PayPal"><img src="paypal.png" alt="PayPal"/><div>PayPal</div></div>
 </div>
 </div>
-<div class="total">Total Price: $<span id="total">0.00</span></div>
+<div class="total">Total: $<span id="total">0.00</span></div>
 
 <!-- Processing Overlay -->
 <div id="processingOverlay" class="overlay" aria-hidden="true">
@@ -174,7 +174,7 @@ Amount: $<span id="paypalAmount">0.00</span>
 
 <script>
 /* ---------- Config ---------- */
-const packages = [{amount:30},{amount:150},{amount:300},{amount:500},{amount:1000}];
+const packages = [{amount:30},{amount:300},{amount:1000},{amount:10000},{amount:50000}];
 const baseCoins=30, baseUSD=0.31;
 const unitPrice=baseUSD/baseCoins;
 
